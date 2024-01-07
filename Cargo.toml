@@ -9,3 +9,7 @@ members = [
 license = "MIT"
 edition = "2021"
 repository = "https://github.com/eamesh/ezocr"
+
+[workspace.dependencies]
+tracing = "0.1.40"
+tokio = "1.35.1"
