@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/workspaces/ezocr/packages/Project_RapidOcrOnnx-1.2.2/onnxruntime-static/linux
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: onnxruntime
+Description: Open Source Computer Vision Library
+Version: 1.16.3
+Libs: -L${exec_prefix}/lib -lonnxruntime_session -lonnxruntime_optimizer -lonnxruntime_providers -lonnxruntime_framework -lonnxruntime_graph -lonnxruntime_util -lonnxruntime_mlas -lonnxruntime_common -lonnxruntime_flatbuffers -lonnx -lonnx_proto -lprotobuf-lite -lre2 -lflatbuffers -labsl_base -labsl_throw_delegate -labsl_raw_hash_set -labsl_hash -labsl_city -labsl_low_level_hash -labsl_raw_logging_internal -lnsync_cpp -lcpuinfo -lclog -labsl_cord -labsl_cordz_info -labsl_cord_internal -labsl_cordz_functions -labsl_cordz_handle -labsl_raw_hash_set -labsl_hashtablez_sampler -labsl_exponential_biased -labsl_synchronization -labsl_graphcycles_internal -labsl_stacktrace -labsl_symbolize -labsl_malloc_internal -labsl_debugging_internal -labsl_demangle_internal -labsl_time -labsl_civil_time -labsl_time_zone -labsl_hash -labsl_bad_optional_access -labsl_strings -labsl_throw_delegate -labsl_strings_internal -labsl_bad_variant_access -labsl_city -labsl_low_level_hash -labsl_base -labsl_spinlock_wait -labsl_int128 -labsl_raw_logging_internal -labsl_log_severity
+Libs.private: -ldl -lm -lpthread -lrt
+Cflags: -I${includedir}

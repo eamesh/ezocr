@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/workspaces/ezocr/packages/Project_RapidOcrOnnx-1.2.2/opencv-static/linux
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/opencv4
+
+Name: opencv
+Description: Open Source Computer Vision Library
+Version: 4.6.0
+Libs: -L${exec_prefix}/lib -lopencv_core -lopencv_features2d -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_photo -lopencv_video
+Libs.private: -ldl -lm -lpthread -lrt
+Cflags: -I${includedir}
