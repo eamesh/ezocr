@@ -1,0 +1,11 @@
+prefix=/Users/emesh/work/emesh/demo/packages/macos/onnxruntime
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/onnxruntime
+
+Name: onnxruntime
+Description: Open Source Computer Vision Library
+Version: 1.16.3
+Libs: -L${exec_prefix}/lib  -labsl_bad_optional_access -labsl_cord -labsl_debugging_internal -labsl_hashtablez_sampler -labsl_raw_hash_set -labsl_strings_internal -labsl_time_zone -lonnx -lonnxruntime_graph -lonnxruntime_util -labsl_bad_variant_access -labsl_cord_internal -labsl_demangle_internal -labsl_int128 -labsl_raw_logging_internal -labsl_symbolize -lclog -lonnx_proto -lonnxruntime_mlas -lprotobuf-lite -labsl_base -labsl_cordz_functions -labsl_exponential_biased -labsl_log_severity -labsl_spinlock_wait -labsl_synchronization -lcpuinfo -lonnxruntime_common -lonnxruntime_optimizer -lre2 -labsl_city -labsl_cordz_handle -labsl_graphcycles_internal -labsl_low_level_hash -labsl_stacktrace -labsl_throw_delegate -lflatbuffers -lonnxruntime_flatbuffers -lonnxruntime_providers -labsl_civil_time -labsl_cordz_info -labsl_hash -labsl_malloc_internal -labsl_strings -labsl_time -lnsync_cpp -lonnxruntime_framework -lonnxruntime_session
+Libs.private: -ldl -lm -lpthread -lrt
+Cflags: -I${includedir}

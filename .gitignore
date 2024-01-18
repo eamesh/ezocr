@@ -1,0 +1,6 @@
+/target/*
+/packages/*
+/models/*
+!/target/.gitkeep
+!/packages/.gitkeep
+!/models/.gitkeep
